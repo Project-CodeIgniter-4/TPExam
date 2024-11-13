@@ -1,0 +1,110 @@
+
+body {
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+margin: 0;
+padding: 0;
+background-color: #181a1b; 
+color: #d7dadc; 
+}
+
+.container {
+max-width: 800px;
+margin: 40px auto;
+padding: 20px;
+background-color: #282a2d; 
+border-radius: 8px;
+box-shadow: none; 
+}
+
+
+.new-post {
+margin-bottom: 20px;
+background-color: #3a3b3c;
+padding: 15px;
+border-radius: 8px;
+width: 60%;
+margin: 0 auto; 
+}
+
+.new-post textarea,
+.new-post input[type="file"],
+.new-post input[type="submit"],
+textarea {
+width: 90%;
+margin: 10px auto;
+display: block;
+padding: 10px;
+border-radius: 5px;
+border: none;
+}
+
+.new-post textarea {
+resize: none;
+height: 80px;
+}
+
+
+.posts {
+width: 60%; 
+margin: 0 auto; 
+}
+
+.posts h2 {
+margin-bottom: 10px;
+}
+
+.post {
+background-color: #3a3b3c;
+margin-bottom: 20px;
+padding: 15px;
+border-radius: 10px;
+}
+.delete-form {
+text-align: right; 
+margin-top: 10px;
+}
+
+.delete-btn {
+background-color: #e74c3c;
+color: white;
+border: none;
+padding: 8px 12px;
+border-radius: 5px;
+cursor: pointer;
+transition: background-color 0.3s;
+font-size: 14px;
+}
+
+.delete-btn:hover {
+background-color: #c0392b;
+}
+
+.post .user-info {
+display: flex;
+align-items: center;
+margin-bottom: 10px;
+}
+
+.post .user-info img {
+width: 40px;
+height: 40px;
+border-radius: 50%;
+margin-right: 10px;
+}
+
+.post img,
+.post video {
+max-width: 100%;
+height: auto;
+border-radius: 8px;
+margin-top: 10px;
+}
+
+@media screen and (max-width: 768px) {
+.container {
+    margin: 20px auto; 
+    padding: 10px;
+}
+}
+
+
