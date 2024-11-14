@@ -38,7 +38,7 @@
 
             <label for="pdp">Photo de profil :</label>
             <input type="file" id="pdp" name="pdp" accept="images/*" required>
-
+             //submit
             <button type="submit">S'inscrire</button>
         </form>
     </div>
