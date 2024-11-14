@@ -1,0 +1,112 @@
+body {
+    font-family: 'Arial', sans-serif;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background: linear-gradient(135deg, #282a2d, #333);
+    overflow: hidden;
+    position: relative;
+    color: white;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, #333, #282a2d, #1a1a1a, #000);
+    animation: moveBackground 10s infinite linear;
+    z-index: -1;
+}
+
+@keyframes moveBackground {
+    0% { transform: translate(0, 0); }
+    50% { transform: translate(-50px, -50px); }
+    100% { transform: translate(0, 0); }
+}
+
+.left-section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 80px;
+    font-weight: bold;
+    color: white;
+    width: 400px;
+    text-align: center;
+    margin: 10px;
+    transform: translateX(-300px); 
+}
+
+.login-form {
+    position: absolute;
+    right: 10%;
+    background-color: #2a2d31;
+    padding: 30px 50px;
+    border-radius: 8px;
+    width: 320px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+.lien{
+text-align: center;
+}
+.login-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: white;
+}
+
+.login-form input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    background-color: #444;
+    color: white;
+    font-size: 16px;
+}
+
+.login-form input::placeholder {
+    color: #bbb;
+}
+
+.login-form button {
+    width: 107%;
+    padding: 4px;
+    background-color: #555;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.login-form button:hover {
+    background-color: #777;
+    transform: translateY(-3px);
+}
+
+.login-form a {
+    color: #bbb;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+.login-form a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.login-form a:not(:last-child) {
+    display: block;
+    margin-bottom: 8px;
+}
