@@ -142,13 +142,13 @@ textarea {
 
 
 .comment strong {
-    display: block; /* Force le nom et le prénom à être sur une nouvelle ligne */
-    margin-bottom: 5px; /* Espace sous le nom */
+    display: block; 
+    margin-bottom: 5px; 
 }
 
 .comment-date {
-    font-size: 12px; /* Taille de police plus petite pour la date */
-    color: #888; /* Couleur grise pour la date */
+    font-size: 12px; 
+    color: #888;
 }
 
 
@@ -689,6 +689,6 @@ textarea {
     border-radius: 10px;
     width: 3500px;
     position: relative;
-    left: -15px; /* Ajustement de 2 cm vers la droite (-20px initial - 2px) */
+    left: -15px; 
 }
 
