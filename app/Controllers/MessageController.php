@@ -47,16 +47,16 @@ class MessageController extends BaseController
         if ($media && $media->isValid()) {
             $fileExtension = $media->getClientExtension();
             
-            // Vérifie si c'est une vidéo
+           
             if (in_array(strtolower($fileExtension), ['mp4', 'webm', 'ogg'])) {
-                // Génère un nom aléatoire unique
+             
                 $mediaName = $media->getRandomName();
             } else {
-                // Utilise le nom original pour les images
+           
                 $mediaName = $media->getName();
             }
 
-            // Déplace le fichier et utilise le nom final
+           
             $media->move('public/uploads', $mediaName);
             $mediaFile = $mediaName;
         }
@@ -78,7 +78,7 @@ public function deleteMessage($messageId)
     $userId = session()->get('iduser');
     $messageModel = new MessageModel();
 
-    // Vérifier si le message existe et appartient à l'utilisateur connecté
+
     $message = $messageModel->find($messageId);
     if (!$message) {
         return $this->response->setStatusCode(404)->setBody('Message introuvable');
@@ -88,7 +88,7 @@ public function deleteMessage($messageId)
         return $this->response->setStatusCode(403)->setBody('Vous n\'êtes pas autorisé à supprimer ce message');
     }
     
-    // Supprimer le message
+  
     if ($messageModel->delete($messageId)) {
         return $this->response->setStatusCode(200)->setBody('Message supprimé');
     }
