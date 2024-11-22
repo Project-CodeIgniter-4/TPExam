@@ -104,7 +104,7 @@ function showDeleteMenu(event, messageId) {
 function deleteMessage(messageId) {
     if (confirm('Êtes-vous sûr de vouloir supprimer ce message ?')) {
         const xhr = new XMLHttpRequest();
-        xhr.open('POST', `http://localhost:8080/page-acceuil/deleteMessage/${messageId}`, true);  // URL complète
+        xhr.open('POST', `http://localhost:8080/page-acceuil/deleteMessage/${messageId}`, true);  
         xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
 
         xhr.onload = function () {
