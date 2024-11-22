@@ -3,15 +3,15 @@ body {
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: flex-end; /* Place le contenu à droite */
-    align-items: center; /* Centre verticalement */
-    height: 100vh; /* Hauteur de l'écran */
+    justify-content: flex-end;
+    align-items: center;
+    height: 100vh; 
     background: linear-gradient(270deg, #282a2d, #3a3f43);
     background-size: 400% 400%;
-    animation: gradientAnimation 15s ease infinite; /* Animation du dégradé */
+    animation: gradientAnimation 15s ease infinite;
 }
 
-/* Animation du dégradé */
+
 @keyframes gradientAnimation {
     0% {
         background-position: 0% 50%;
@@ -24,44 +24,45 @@ body {
     }
 }
 
-        /* Partie gauche */
+        
         .left-section {
-            flex: 1; /* Utilise l'espace disponible */
+            flex: 1;
             display: flex;
-            justify-content: center; /* Centre horizontalement */
-            align-items: center; /* Centre verticalement */
-            font-size: 80px; /* Taille du texte */
-            font-weight: bold; /* Texte en gras */
-            color: white; /* Couleur du texte */
-            width: 400px; /* Largeur augmentée */
-            text-align: center; /* Centre le texte */
+            justify-content: center; 
+            align-items: center;
+            font-size: 80px; 
+            font-weight: bold; 
+            color: white;
+            width: 400px;
+            text-align: center; 
         }
 
-        /* Partie droite */
+        
         .container {
-            justify-content: center; /* Centre horizontalement */
-            align-items: center; /* Centre verticalement */
-    width: 400px; /* Largeur du formulaire */
-    padding: 20px 40px; /* Diminuer la hauteur (haut et bas), conserver la largeur (gauche et droite) */
+            justify-content: center;
+            align-items: center;
+    width: 400px; 
+    padding: 20px 40px; 
     margin: 100px;
 
     border-radius: 8px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-    color: #fff; /* Couleur du texte */
-    margin-left: 20px; /* Espacement entre le texte et le formulaire */
+    color: #fff; 
+    margin-left: 20px; 
     
 }
 
 
         h2 {
             text-align: center;
-            color: #f4f4f4; /* Couleur du texte du titre */
+            color: #f4f4f4; 
+            
         }
 
         label {
             display: block;
             margin: 10px 0 5px;
-            color: #d7dadc; /* Couleur du texte des labels */
+            color: #d7dadc; 
         }
         @keyframes fadeInUp {
     from {
@@ -79,16 +80,16 @@ body {
         select,
         input[type="file"] {
             width: 100%;
-            padding: 7px; /* Espacement accru */
+            padding: 7px;
             margin: 5px 0 15px;
-            border: 1px solid #555; /* Bordure plus foncée */
+            border: 1px solid #555; 
             border-radius: 4px;
-            background-color: #444; /* Couleur de fond des champs */
-            color: #fff; /* Couleur du texte */
+            background-color: #444; 
+            color: #fff; 
         }
 
         button {
-    width: 417px; /* Largeur fixe pour le bouton */
+    width: 417px;
     padding: 10px;
     background-color: grey;
     color: white;
@@ -96,8 +97,8 @@ body {
     border-radius: 4px;
     cursor: pointer;
     transition: background-color 0.3s;
-    display: block; /* Nécessaire pour centrer avec les marges */
-    margin: 0 auto; /* Centrer horizontalement */
+    display: block;
+    margin: 0 auto; 
 }
 
 
